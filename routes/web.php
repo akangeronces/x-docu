@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
-    return view('login');
+    return view('home');
 });
+*/
 
-Route::get('/home', 'HomeController@index');
+Route::get('/login',        'LoginController@index');
+Route::get('/',             'Instansi\HomeController@index');
+Route::get('/TambahUsul',             'Instansi\HomeController@TambahUsul');
