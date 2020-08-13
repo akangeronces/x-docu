@@ -12,4 +12,9 @@ class HomeController extends Controller
         return view('instansi.home.index');
     }
 
+    public function TambahUsul()
+    {
+        return view('instansi.home.TambahUsul');
+    }
+
 }

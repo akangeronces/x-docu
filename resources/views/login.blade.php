@@ -4,6 +4,7 @@
 <head>
 	<title>x-docu</title>
 	<link rel="stylesheet" href="{{ asset('lte') }}/bower_components/font-awesome/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="{{ asset('lte') }}/dist/css/akangeronces.css">	
 	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 <!------ Include the above in your HEAD tag ---------->
@@ -94,7 +95,10 @@
 					<form action="{{ route('login') }}" method="POST">
 
 						@csrf
-						<div class="input-group mb-3">
+
+							
+						
+						<div class="input-group mb-3 has-error">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>

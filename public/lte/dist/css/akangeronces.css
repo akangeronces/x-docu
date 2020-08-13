@@ -1,3 +1,6 @@
 .bordered{
     border-right:5px dashed #393f47;
 }
+.gagal{
+    border-color: blue;
+}

@@ -27,5 +27,5 @@ Route::group(['namespace' => 'Auth'], function() {
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/',             'Instansi\HomeController@index');
-    Route::get('/TambahUsul',             'Instansi\HomeController@TambahUsul');
+    Route::get('/TambahUsul',   'Instansi\HomeController@TambahUsul');
 });

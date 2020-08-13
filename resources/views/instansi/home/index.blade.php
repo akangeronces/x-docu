@@ -10,8 +10,8 @@
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li><a href="#">Examples</a></li>
-      <li class="active">Blank page</li>
+      <li><a href="#">Instansi</a></li>
+      <li class="active">Dashboard Usul</li>
     </ol>
   </section>
 @endsection
@@ -24,7 +24,7 @@
           
           
         <div class="btn-group-vertical" style="margin-bottom:10px">
-          <button type="button" class="btn btn-success">Tambah Tiket</button>
+          <a href="TambahUsul"  class="btn btn-success">Tambah Tiket</a>
         </div>
 
 
