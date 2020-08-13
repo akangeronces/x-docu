@@ -20,9 +20,9 @@ Route::get('/', function () {
 */
 
 Route::group(['namespace' => 'Auth'], function() {
-    Route::get('/logout',        'LoginController@logout')->name('login');
+    Route::get('/logout',        'LoginController@logout');
     Route::post('/login',        'LoginController@login')->name('login');
-    Route::get('/login',        'LoginController@showLoginForm');
+    Route::get('/login',        'LoginController@showLoginForm')->name('login');
 });
 
 
