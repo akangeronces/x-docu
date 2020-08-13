@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="{{ asset('lte') }}/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ asset('lte') }}/bower_components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ asset('lte') }}/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="{{ asset('lte') }}/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <link rel="stylesheet" href="{{ asset('lte') }}/dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="{{ asset('lte') }}/dist/css/skins/skin-blue.css">
   <link rel="stylesheet" href="{{ asset('lte') }}/dist/css/akangeronces.css">
@@ -54,11 +55,25 @@
 <script src="{{ asset('lte') }}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="{{ asset('lte') }}/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <script src="{{ asset('lte') }}/bower_components/fastclick/lib/fastclick.js"></script>
+<script src="{{ asset('lte') }}/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="{{ asset('lte') }}/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <script src="{{ asset('lte') }}/dist/js/adminlte.min.js"></script>
 {{-- <script src="{{ asset('lte') }}/dist/js/demo.js"></script> --}}
 <script>
   $(document).ready(function () {
     $('.sidebar-menu').tree()
+  })
+
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
   })
 </script>
 {{-- @livewireScripts --}}

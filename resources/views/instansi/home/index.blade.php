@@ -23,7 +23,7 @@
         <section class="content">
           
           
-        <div class="btn-group-vertical">
+        <div class="btn-group-vertical" style="margin-bottom:10px">
           <button type="button" class="btn btn-success">Tambah Tiket</button>
         </div>
 
@@ -40,6 +40,7 @@
                       <thead>
                         <tr>
                           <th style="width: 10px">#</th>
+                          <th>Nomor Tiket</th>
                           <th>Nomor Usul</th>
                           <th>Pelayanan</th>
                           <th>Total</th>
@@ -47,12 +48,13 @@
                           <th>BTL</th>
                           <th>TMS</th>
                           <th>Progress</th>
-                          <th style="width: 40px">Label</th>
+                          <th style="width: 40px"></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td>1.</td>
+                          <td>256489</td>
                           <td>154/bkpsdm/2020</td>
                           <td>Pindah Instansi</td>
                           <td>15</td>
@@ -68,6 +70,7 @@
                         </tr>
                         <tr>
                           <td>2.</td>
+                          <td>564895</td>
                           <td>155/bkpsdm/2020</td>
                           <td>Perbaikan Masa Kerja</td>
                           <td>15</td>
@@ -83,6 +86,7 @@
                         </tr>
                         <tr>
                           <td>3.</td>
+                          <td>213489</td>
                           <td>156/bkpsdm/2020</td>
                           <td>Konversi NIP</td>
                           <td>15</td>
@@ -98,6 +102,7 @@
                         </tr>
                         <tr>
                           <td>4.</td>
+                          <td>648751</td>
                           <td>157/bkpsdm/2020</td>
                           <td>Karpeg</td>
                           <td>15</td>
@@ -124,6 +129,41 @@
               <!-- /.box-footer-->
             </div>
             <!-- /.box -->
+
+
+<!-- detail nip -->
+<div class="box">
+  <div class="box-header">
+    <h3 class="box-title"><b>648751</b></h3>
+  </div>
+  <!-- /.box-header -->
+  <div class="box-body">
+    <table id="example1" class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th style="width: 10px">#</th>
+        <th>NIP</th>
+        <th>Nama Pegawai</th>
+        <th>Status</th>
+        <th>Keterangan</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr>
+        <td>1</td>
+        <td>198703121987032003</td>
+        <td>Andi Matupalesa</td>
+        <td>ACC</td>
+        <td></td>
+      </tr>
+     
+    </table>
+  </div>
+  <!-- /.box-body -->
+</div>
+<!-- /.box -->
+
       
           </section>
 @endsection
