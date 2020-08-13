@@ -19,6 +19,13 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/login',        'LoginController@index');
-Route::get('/',             'Instansi\HomeController@index');
-Route::get('/TambahUsul',             'Instansi\HomeController@TambahUsul');
+Route::group(['namespace' => 'Auth'], function() {
+    Route::get('/logout',        'LoginController@logout');
+    Route::post('/login',        'LoginController@login')->name('login');
+    Route::get('/login',        'LoginController@showLoginForm')->name('login');
+});
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/',             'Instansi\HomeController@index');
+    Route::get('/TambahUsul',             'Instansi\HomeController@TambahUsul');
+});
