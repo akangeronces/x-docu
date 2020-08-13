@@ -91,18 +91,30 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-center form_container">
-					<form action="{{url('/')}}" method="POST">
+					<form action="{{ route('login') }}" method="POST">
+
+						@csrf
 						<div class="input-group mb-3">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" name="" class="form-control input_user" value="" placeholder="username">
+							<input type="text" name="username" class="form-control input_user @error('username') is-invalid @enderror" value="{{ old('username') }}" placeholder="username">
+							@error('username')
+							<span class="invalid-feedback" role="alert">
+								<strong>{{ $message }}</strong>
+							</span>
+							@enderror
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" name="" class="form-control input_pass" value="" placeholder="password">
+							<input type="password" name="password" class="form-control input_pass @error('password') is-invalid @enderror" value="" placeholder="password">
+							@error('password')
+								<span class="invalid-feedback" role="alert">
+									<strong>{{ $message }}</strong>
+								</span>
+							@enderror
 						</div>
 						<div class="form-group">
                             <button type="submit" name="button" class="btn login_btn">Login</button>
