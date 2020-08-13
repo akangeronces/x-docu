@@ -25,6 +25,7 @@ Route::group(['namespace' => 'Auth'], function() {
     Route::get('/login',        'LoginController@showLoginForm')->name('login');
 });
 
-
-Route::get('/',             'Instansi\HomeController@index');
-Route::get('/TambahUsul',             'Instansi\HomeController@TambahUsul');
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/',             'Instansi\HomeController@index');
+    Route::get('/TambahUsul',             'Instansi\HomeController@TambahUsul');
+});

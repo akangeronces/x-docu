@@ -98,7 +98,7 @@
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" name="username" class="form-control input_user @error('username') is-invalid @enderror" value="{{ old('username') }}" placeholder="username">
+							<input type="text" name="username" class="form-control input_user @error('username') is-invalid @enderror" value="{{ old('username', '197505042006041002') }}" placeholder="username">
 							@error('username')
 							<span class="invalid-feedback" role="alert">
 								<strong>{{ $message }}</strong>
@@ -109,7 +109,7 @@
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" name="password" class="form-control input_pass @error('password') is-invalid @enderror" value="" placeholder="password">
+							<input type="password" name="password" class="form-control input_pass @error('password') is-invalid @enderror" value="password" placeholder="password">
 							@error('password')
 								<span class="invalid-feedback" role="alert">
 									<strong>{{ $message }}</strong>
