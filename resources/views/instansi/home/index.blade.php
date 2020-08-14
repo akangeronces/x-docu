@@ -24,7 +24,7 @@
           
           
         <div class="btn-group-vertical" style="margin-bottom:10px">
-          <a href="TambahUsul"  class="btn btn-success">Tambah Tiket</a>
+          <a href="{{ route('usul.tambahUsul') }}"  class="btn btn-success">Tambah Tiket</a>
         </div>
 
 
