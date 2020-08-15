@@ -61,7 +61,8 @@
 {{-- <script src="{{ asset('lte') }}/dist/js/demo.js"></script> --}}
 <script>
   $(document).ready(function () {
-    $('.sidebar-menu').tree()
+   $('.sidebar-menu').tree()
+   $('.uploadzipClick').click(function(){ $('#uploadzip').trigger('click'); });
 
   $("#checkedAll").change(function(){
     if(this.checked){

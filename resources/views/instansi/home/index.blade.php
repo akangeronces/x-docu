@@ -21,13 +21,12 @@
 
 
         <section class="content">
-          
-          
+   
         <div class="btn-group-vertical" style="margin-bottom:10px">
           <a href="{{ route('usul.tambahUsul') }}"  class="btn btn-success">Tambah Tiket</a>
         </div>
 
-
+        <input type="file" id="uploadzip" style="display:none"/> 
             <!-- Default box -->
             <div class="box">
           
@@ -50,7 +49,7 @@
                           <th>Progress</th>
                           <th style="width: 40px"></th>
                           <th>Status</th>
-                          <th>Tindakan</th>
+                          <th style="width: 170px">Tindakan</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -69,24 +68,15 @@
                             </div>
                           </td>
                           <td><span class="badge bg-danger">55%</span></td>
-                          <td><p class="text-success"><strong>ENTRI BARU</strong></p></td>
+                          <td><p class="text-success"><strong>INSTANSI</strong></p></td>
                           <td>
 
-                            <div class="btn-group-vertical">
-                              <button type="button" class="btn btn-default">1</button>
-                              <button type="button" class="btn btn-default">2</button>
-      
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                                </ul>
-                              </div>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default btn-flat"><i class="fa fa-send-o"></i></button>
+                              <button type="button" class="btn btn-default btn-flat"><i class="fa fa-pencil"></i></button>
+                              <button type="button" class="btn btn-default btn-flat"><i class="fa fa-remove"></i></button>
+                              <button type="button" class="btn btn-default btn-flat uploadzipClick"><i class="fa fa-upload"></i></button>
                             </div>
-                           
-
                           </td>
                         </tr>
                         <tr>
@@ -104,6 +94,16 @@
                             </div>
                           </td>
                           <td><span class="badge bg-warning">70%</span></td>
+                          <td><p class="text-success"><strong>BKN</strong></p></td>
+                          <td>
+
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default btn-flat" disabled><i class="fa fa-send-o"></i></button>
+                              <button type="button" class="btn btn-default btn-flat"><i class="fa fa-pencil"></i></button>
+                              <button type="button" class="btn btn-default btn-flat"><i class="fa fa-remove"></i></button>
+                              <button type="button" class="btn btn-default btn-flat uploadzipClick"><i class="fa fa-upload"></i></button>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>3.</td>
@@ -120,6 +120,15 @@
                             </div>
                           </td>
                           <td><span class="badge bg-primary">30%</span></td>
+                          <td><p class="text-warning"><strong>DIPROSES BKN</strong></p></td>
+                          <td>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default btn-flat" disabled><i class="fa fa-send-o"></i></button>
+                              <button type="button" class="btn btn-default btn-flat" disabled><i class="fa fa-pencil"></i></button>
+                              <button type="button" class="btn btn-default btn-flat" disabled><i class="fa fa-remove"></i></button>
+                              <button type="button" class="btn btn-default btn-flat uploadzipClick" disabled><i class="fa fa-upload"></i></button>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>4.</td>
@@ -127,8 +136,8 @@
                           <td>157/bkpsdm/2020</td>
                           <td>Karpeg</td>
                           <td>15</td>
+                          <td>3</td>
                           <td>1</td>
-                          <td>0</td>
                           <td>0</td>
                           <td>
                             <div class="progress progress-xs progress-striped active">
@@ -136,6 +145,16 @@
                             </div>
                           </td>
                           <td><span class="badge bg-success">90%</span></td>
+                          <td><p class="text-warning"><strong>DIPROSES BKN</strong></p></td>
+                          <td>
+
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default btn-flat" disabled><i class="fa fa-send-o"></i></button>
+                              <button type="button" class="btn btn-default btn-flat" disabled><i class="fa fa-pencil"></i></button>
+                              <button type="button" class="btn btn-default btn-flat" disabled><i class="fa fa-remove"></i></button>
+                              <button type="button" class="btn btn-default btn-flat uploadzipClick"><i class="fa fa-upload"></i></button>
+                            </div>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
