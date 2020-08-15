@@ -49,6 +49,8 @@
                           <th>TMS</th>
                           <th>Progress</th>
                           <th style="width: 40px"></th>
+                          <th>Status</th>
+                          <th>Tindakan</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -67,6 +69,25 @@
                             </div>
                           </td>
                           <td><span class="badge bg-danger">55%</span></td>
+                          <td><p class="text-success"><strong>ENTRI BARU</strong></p></td>
+                          <td>
+
+                            <div class="btn-group-vertical">
+                              <button type="button" class="btn btn-default">1</button>
+                              <button type="button" class="btn btn-default">2</button>
+      
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                           
+
+                          </td>
                         </tr>
                         <tr>
                           <td>2.</td>
@@ -138,10 +159,11 @@
   </div>
   <!-- /.box-header -->
   <div class="box-body">
-    <table id="example1" class="table table-bordered table-striped">
+    <table id="table1" class="table table-bordered table-striped">
       <thead>
       <tr>
-        <th style="width: 10px">#</th>
+        <th class="no-sort" style="width: 10px"><input type="checkbox" class="form-check-input" id="checkedAll" ></th>
+        <th style="width: 10px">NO</th>
         <th>NIP</th>
         <th>Nama Pegawai</th>
         <th>Status</th>
@@ -151,18 +173,30 @@
       <tbody>
 
       <tr>
+        <td><input type="checkbox" class="form-check-input checkSingle"> </td>
         <td>1</td>
         <td>198703121987032003</td>
         <td>Andi Matupalesa</td>
         <td>ACC</td>
         <td></td>
       </tr>
-     
+
+      <tr>
+        <td><input type="checkbox" class="form-check-input checkSingle"> </td>
+        <td>2</td>
+        <td>197703121952032003</td>
+        <td>Dina Mardiana</td>
+        <td>BTL</td>
+        <td></td>
+      </tr>
     </table>
   </div>
   <!-- /.box-body -->
 </div>
 <!-- /.box -->
+<div class="btn-group-vertical" style="margin-top:-10px">
+  <a href="{{ route('usul.tambahUsul') }}"  class="btn btn-success">Pickup for me</a>
+</div>
 
       
           </section>
