@@ -58,8 +58,9 @@
                 <td>{{ $index + 1 }}.</td>
                 <td>{{ $ticket->no_tiket }}</td>
                 <td>{{ $ticket->no_pengantar }}</td>
-                @php ($pelayanan = $ticket->pelayanan)
+                
                 <td>
+                  @php ($pelayanan = $ticket->pelayanan)
                   @if ($pelayanan)
                     {{ $pelayanan->nm_pelayanan }}
                     @php($bidang = $pelayanan->bidang)
